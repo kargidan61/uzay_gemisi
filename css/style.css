@@ -1,0 +1,78 @@
+body {
+    background-color: #050505;
+    color: #00ff00; /* Hacker Yeşili */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.panel {
+    background-color: #111;
+    border: 2px solid #00ff00;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+input, select {
+    background-color: #000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+nav a { color: #00ff00; text-decoration: none; font-weight: bold; margin: 0 10px;}
+nav a:hover { color: #fff; }
+
+.uyari-mesaji { color: red; font-weight: bold; }
+
+.durum-kutusu {
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px dashed;
+}
+
+.kirmizi { border-color: red; color: red; }
+.mavi { border-color: #00ffff; color: #00ffff; text-shadow: 0 0 10px #00ffff;}
+
+.kalkan-yok-edildi {
+    background-color: red;
+    border-color: red;
+    color: black;
+    animation: kalkan-uyarisi 0.8s steps(2, start) infinite;
+}
+
+@keyframes kalkan-uyarisi {
+    to { visibility: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .kalkan-yok-edildi {
+        animation: none;
+    }
+}
